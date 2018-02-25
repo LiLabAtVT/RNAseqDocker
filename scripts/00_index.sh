@@ -1,6 +1,7 @@
 workdir=$(PWD)
-
-$workdir/software/STAR --runMode genomeGenerate \
+cd $workdir
+mkdir index
+$workdir/bin/STAR --runMode genomeGenerate \
      --genomeDir $workdir/index \
-     --genomeFastaFiles $workdir/TAIR10.part.fasta 
+     --genomeFastaFiles $workdir/data/TAIR10.part.fasta 
 
