@@ -1,4 +1,4 @@
-workdir=$(PWD)
+workdir=$(pwd)
 cd $workdir
 mkdir index
 $workdir/bin/STAR --runMode genomeGenerate \

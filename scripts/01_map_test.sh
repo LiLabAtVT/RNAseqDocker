@@ -1,6 +1,6 @@
-workdir=$(PWD)
+workdir=$(pwd)
 cd $workdir
 
-$workdir/software/STAR --genomeDir $workdir/index \
-	--readFilesIn $workdir/data/reads.fastq.gz \
+$workdir/bin/STAR --genomeDir $workdir/index \
+	--readFilesIn $workdir/data/reads.fastq \
 	--outSAMtype BAM SortedByCoordinate
